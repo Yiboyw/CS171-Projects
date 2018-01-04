@@ -1,9 +1,9 @@
-# CS171-Projects
+### CS171-Projects
 These are coding assignments from my Introduction to Computer Science CS171 class. 
 
 The following are a description of the assignments: 
 
-Guessing Game
+# Guessing Game
 
 You are to think of a number between from 1000-9999. Let's say you chose 3536.
 
