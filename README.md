@@ -25,7 +25,7 @@ The program will continue to do these steps until it has finally guessed your nu
 
 See file: *GuessingGame.java*
 
-# Project 3 - LayOff Problem
+## Project 3 - LayOff Problem
 
 In this exercise you implement a solver for a reducing ordered selection problem. 
 
@@ -41,7 +41,7 @@ which returns the position Mary should choose. For example mary(7,2) should retu
 
 See file: *Mary.java*
 
-# Project 4 - Linked Deque
+## Project 4 - Linked Deque
 
 In this exercise, you finish a doubly-linked list implementation of Deque (see Deque.java). Deque is a double-ended queue interface, a simplification of java.util.Deque.
 
