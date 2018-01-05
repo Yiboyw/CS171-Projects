@@ -1,0 +1,99 @@
+Welcome to Project 5! You have been hired to finish implementing an Emory Movie Database (EMD). This is your chance for the big break. This movie database takes in commands, like reading a list of movies with some descriptions. Importantly, the EMD lets you search for a range of movies. 
+
+When you run EMD from a command line prompt, it will wait for your commands. The commands are delimited by a forward slash: / The commands are:
+
+Add a movie to the database. Takes two arguments: the name of the movie, and the description. For example:
+add/Shredder/Foot Clan Ninja
+will add the movie "Shredder" with the description "Foot Clan Ninja" to the movie database.
+Get a movie description from the database. The argument specifies the exact name of the movie (although movie names are not case-sensitive) For example:
+get/shredder
+in the example above will find the movie "Shredder" and print its description.
+Next movie in database. This command will print the name of the movie that comes lexicographically after the argument. It can be used to search by prefix or in fact any string that precedes the name of the movie that you wanted (except the full name of the movie). For example:
+next/shre
+in the example above will find the movie "Shredder". But if there are no other movies in the database,
+next/achtung
+would also find the movie Shredder, since it's lexicographically the "next" movie in the database consisting of just one lonely film. It can also be used to iterate through movies, since
+next/Shredder
+should return the next movie that comes after "Shredder".
+Find movies in the database. This command will print all movie titles that are in between two specified titles, arranged lexicographically. (Both endpoints included). It can also be used for search by a prefix. For example:
+find/shed/shre
+might print "sherlock" in a fictional database, but neither "shredder" nor "shrek" since that's outside the range of the parameters.
+Remove movie from database. The movie name should be specified exactly by the argument and then removed from the database. Continuing the example above:
+remove/shreDDer
+in the example above will remove the movie "Shredder" (note the case-insensitivity) from the database.
+ 
+
+To take an example of a live session, here is how to interact with EMD from the command line. The red commands are what you type in, and the black is what the program will return. (Movie descriptions from Reddit).
+
+$ java EMD
+
+add/Mary Poppins/Two children, neglected by parents who are consumed with their business and political goals, find themselves in peril as two strangers lead them on a chase across London rooftops.
+Adding 'Mary Poppins' ...
+
+add/Toy Story/Brainwashed animated playthings are abandoned by their slave master and sent to a camp where they are abused and imprisoned by their peers.
+Adding 'Toy Story' ...
+
+add/Aladdin/A delinquent and his pet steal treasure and use it to kidnap a princess. Stolkholm syndrome ensues in this whole new world.
+Adding 'Aladdin' ...
+
+next/aardvark
+Looking up next movie after 'aardvark' ...
+aladdin
+
+next/beetlejuice
+Looking up next movie after 'beetlejuice' ...
+mary poppins
+
+find/aardvark/zyzzyva
+Searching range of 'aardvark'-'zyzzyva' ...
+aladdin: A delinquent and his pet steal treasure and use it to kidnap a princess. Stolkholm syndrome ensues in this whole new world.
+mary poppins: Two children, neglected by parents who are consumed with their business and political goals, find themselves in peril as two strangers lead them on a chase across London rooftops.
+toy story: Brainwashed animated playthings are abandoned by their slave master and sent to a camp where they are abused and imprisoned by their peers.
+
+get/toy story
+Looking up 'toy story' ...
+Brainwashed animated playthings are abandoned by their slave master and sent to a camp where they are abused and imprisoned by their peers.
+
+remove/toy story
+Removing 'toy story' ...
+
+get/toy story
+Looking up 'toy story' ...
+null
+
+next/Snow White
+Looking up next movie after 'Snow White' ...
+null
+
+find/aardvark/zyzzyva
+Searching range of 'aardvark'-'zyzzyva' ...
+aladdin: A delinquent and his pet steal treasure and use it to kidnap a princess. Stolkholm syndrome ensues in this whole new world.
+mary poppins: Two children, neglected by parents who are consumed with their business and political goals, find themselves in peril as two strangers lead them on a chase across London rooftops.
+ 
+
+Assignment
+Fortunately for you, most of the command-line interface has been implemented. However, the implementation for the crucial data structure supporting the EMD -- a RangeMap -- seems to be missing. In particular, the following commands need to be implemented using some data structure that supports range queries, such as binary search trees (BST), or something fancier...
+
+Note: Your implementation needs to be generic: instead of just movie names and descriptions being strings, we will use Java generics with K representing the key type, and V the value type. You need to follow the interface in RangeMap.java. We also insist that the keys K are Comparable, in other words that you can compare two keys and know which is bigger or smaller. For movie titles, this is the lexicographic (alphabetic) ordering of strings. EMD already converts all movie titles to lower-case, so you can just do generic key comparison.
+
+add(K key, V value):
+Add the key and a value to your RangeMap. (For EMD, this would be the name of the movie (key) and its description (value), respectively.) If there is a duplicate key, the old entry should be overwritten with the new value.
+V get(K key):
+Retrieve the value corresponding to key, or return null if the key is not in your RangeMap. The comparison between keys should be exact. (For EMD, this would correspond to the name of the movie (key).)
+K next(K key):
+Return the key in the RangeMap that's lexicographically next after 'key', or return null otherwise. (For EMD, this would correspond to the name of the movie that's next after the one specified). Note that key does not have to exist in the database.
+List<KVPair<K,V>> range(K start, K end):
+Return a list of key-value pairs in the RangeMap that are between the strings start and end, both endpoints included. The list should be in lexicographic order. If no keys match, the method should return the empty list. (For EMD, range would return an alphabetic list of movies titles that are between the two parameter strings). Note that neither start nor end have to be real movie titles that exist in the database.
+remove(K key):
+Removes the key-value pair with key specified by the parameter from the RangeMap. Does nothing if the key does not exist.
+ 
+As before, you should read through the source to see how it works. The files you need are located here. Comments marked "TODO: Implement me(basic score)" are required elements, which you must complete before submission on Mimir. Other items marked "TODO" are "extra credit": they are not required for submission, but they give you a better score. If you want full 100% score (or more!) on the assignment, make sure to try the extra credit parts, but only do so after you've made sure the required parts are working. It is important to implement a time-efficient implementation of range, something that a regular BST implementation will achieve (a balanced BST will not be required).
+
+K next(K key):
+Return the key in the RangeMap that's lexicographically next after 'key', or return null otherwise. (For EMD, this would correspond to the name of the movie that's next after the one specified). Note that key does not have to exist in the database.
+
+Hints
+You can test your progress on your own computer by typing:
+$ java EMD test1-in.txt
+The output should match the contents of test1-out.txt. The first test checks only add and get, the second test also uses find and next, and the third one additionally checks remove.
+First make things work, then optimize.
