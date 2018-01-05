@@ -55,5 +55,8 @@ You have been hired to finish implementing an Emory Movie Database (EMD). This i
 
 See file: *EMD.java, In.java, RangeMap.java, StdIn.java, test1-in.txt, test1-out.txt, test2-in.txt, test2-out.txt, test3-in.txt, test3-out.tx*
 
+## Project 6 - PathFinder
 
+You then edit PathFinder.java, which already solves a path-finding problem in a maze of bits. We want you to improve it. As before, you should read through the source to see how it works. 
 
+See file: *LinkedDeque.java, Maze.java, PathFinder.java, Position.java, maze1.txt, maze2.txt, maze3.txt, maze4.txt*
