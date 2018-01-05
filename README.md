@@ -49,5 +49,11 @@ As a starting point, you are given a partial solution LinkedDeque.java. This fil
 
 See file: *Deque.java, LinkedDeque.java*
 
+## Project 5 - Emory Movie Database
+
+You have been hired to finish implementing an Emory Movie Database (EMD). This is your chance for the big break. This movie database takes in commands, like reading a list of movies with some descriptions. The EMD database can add, remove, and find movies and also get their movie description.  
+
+See file: *EMD.java, In.java, RangeMap.java, StdIn.java, test1-in.txt, test1-out.txt, test2-in.txt, test2-out.txt, test3-in.txt, test3-out.tx*
+
 
 
