@@ -1,0 +1,394 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fmodern\fcharset0 Courier;\f2\fnil\fcharset0 LucidaGrande;
+}
+{\colortbl;\red255\green255\blue255;\red30\green38\blue42;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c15686\c19608\c21961;\cssrgb\c100000\c100000\c100000;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid102\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid402\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl340\sa40\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Welcome to Project 5! You have been hired to finish implementing an Emory Movie Database (EMD). This is your chance for the big break. This movie database takes in commands, like reading a list of movies with some descriptions. Importantly, the EMD lets you search for a\'a0
+\i range
+\i0 \'a0of movies. \
+\
+The files you need are the following (or just grab\'a0{\field{\*\fldinst{HYPERLINK "https://s3.amazonaws.com/mimirplatform.production/projects/dc5c03a9-86cd-4ddb-bb3a-b24df3e61bd9/description_files/EMD.zip"}}{\fldrslt \ul EMD.zip}}\'a0which contains all of them)\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}{\field{\*\fldinst{HYPERLINK "https://s3.amazonaws.com/mimirplatform.production/projects/dc5c03a9-86cd-4ddb-bb3a-b24df3e61bd9/description_files/EMD.java"}}{\fldrslt \expnd0\expndtw0\kerning0
+\ul EMD.java}}\cb1 \expnd0\expndtw0\kerning0
+\
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}{\field{\*\fldinst{HYPERLINK "https://s3.amazonaws.com/mimirplatform.production/projects/dc5c03a9-86cd-4ddb-bb3a-b24df3e61bd9/description_files/In.java"}}{\fldrslt \expnd0\expndtw0\kerning0
+\ul In.java}}\cb1 \expnd0\expndtw0\kerning0
+\
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}{\field{\*\fldinst{HYPERLINK "https://s3.amazonaws.com/mimirplatform.production/projects/dc5c03a9-86cd-4ddb-bb3a-b24df3e61bd9/description_files/RangeMap.java"}}{\fldrslt \expnd0\expndtw0\kerning0
+\ul RangeMap.java}}\cb1 \expnd0\expndtw0\kerning0
+\
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}{\field{\*\fldinst{HYPERLINK "https://s3.amazonaws.com/mimirplatform.production/projects/dc5c03a9-86cd-4ddb-bb3a-b24df3e61bd9/description_files/StdIn.java"}}{\fldrslt \expnd0\expndtw0\kerning0
+\ul StdIn.java}}\cb1 \expnd0\expndtw0\kerning0
+\
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}{\field{\*\fldinst{HYPERLINK "https://s3.amazonaws.com/mimirplatform.production/projects/dc5c03a9-86cd-4ddb-bb3a-b24df3e61bd9/description_files/test1-in.txt"}}{\fldrslt \expnd0\expndtw0\kerning0
+\ul test1-in.txt}}\cb1 \expnd0\expndtw0\kerning0
+\
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}{\field{\*\fldinst{HYPERLINK "https://s3.amazonaws.com/mimirplatform.production/projects/dc5c03a9-86cd-4ddb-bb3a-b24df3e61bd9/description_files/test1-out.txt"}}{\fldrslt \expnd0\expndtw0\kerning0
+\ul test1-out.txt}}\cb1 \expnd0\expndtw0\kerning0
+\
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}{\field{\*\fldinst{HYPERLINK "https://s3.amazonaws.com/mimirplatform.production/projects/dc5c03a9-86cd-4ddb-bb3a-b24df3e61bd9/description_files/test2-in.txt"}}{\fldrslt \expnd0\expndtw0\kerning0
+\ul test2-in.txt}}\cb1 \expnd0\expndtw0\kerning0
+\
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}{\field{\*\fldinst{HYPERLINK "https://s3.amazonaws.com/mimirplatform.production/projects/dc5c03a9-86cd-4ddb-bb3a-b24df3e61bd9/description_files/test2-out.txt"}}{\fldrslt \expnd0\expndtw0\kerning0
+\ul test2-out.txt}}\cb1 \expnd0\expndtw0\kerning0
+\
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}{\field{\*\fldinst{HYPERLINK "https://s3.amazonaws.com/mimirplatform.production/projects/dc5c03a9-86cd-4ddb-bb3a-b24df3e61bd9/description_files/test3-in.txt"}}{\fldrslt \expnd0\expndtw0\kerning0
+\ul test3-in.txt}}\cb1 \expnd0\expndtw0\kerning0
+\
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}{\field{\*\fldinst{HYPERLINK "https://s3.amazonaws.com/mimirplatform.production/projects/dc5c03a9-86cd-4ddb-bb3a-b24df3e61bd9/description_files/test3-out.txt"}}{\fldrslt \expnd0\expndtw0\kerning0
+\ul test3-out.txt}}{\field{\*\fldinst{HYPERLINK "http://commons.wikimedia.org/wiki/File%3AToyogeki-Movie_Toyooka002.jpg"}}{\fldrslt \cb1 \expnd0\expndtw0\kerning0
+\
+}}\pard\pardeftab720\sl460\partightenfactor0
+
+\fs36 \cf2 \expnd0\expndtw0\kerning0
+The Database\
+\pard\pardeftab720\sl340\sa40\partightenfactor0
+
+\fs28 \cf2 When you run\'a0
+\f1 EMD
+\f0 \'a0from a command line prompt, it will wait for your commands. The commands are delimited by a forward slash:\'a0
+\f1 /
+\f0 \'a0The commands are:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Add\'a0a movie to the database. Takes two arguments: the name of the movie, and the description. For example:
+\f1 add/Shredder/Foot Clan Ninja\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls2\ilvl0\cf2 \cb1 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl340\partightenfactor0
+\ls2\ilvl1
+\f0 \cf2 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls2\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+will add the movie "Shredder" with the description "Foot Clan Ninja" to the movie database.\cb1 \
+\ls2\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Get\'a0a movie description from the database. The argument specifies the exact name of the movie (although movie names are not case-sensitive) For example:
+\f1 get/shredder\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls2\ilvl0\cf2 \cb1 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl340\partightenfactor0
+\ls2\ilvl1
+\f0 \cf2 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls2\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+in the example above will find the movie "Shredder" and print its description.\cb1 \
+\ls2\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Next\'a0movie in database. This command will print the name of the movie that comes lexicographically after the argument. It can be used to search by prefix or in fact any string that precedes the name of the movie that you wanted (except the full name of the movie). For example:
+\f1 next/shre\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls2\ilvl0\cf2 \cb1 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl340\partightenfactor0
+\ls2\ilvl1
+\f0 \cf2 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls2\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+in the example above will find the movie "Shredder". But if there are no other movies in the database,
+\f1 next/achtung\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls2\ilvl0\cf2 \cb1 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl340\partightenfactor0
+\ls2\ilvl1
+\f0 \cf2 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls2\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+would also find the movie Shredder, since it's lexicographically the "next" movie in the database consisting of just one lonely film. It can also be used to iterate through movies, since
+\f1 next/Shredder\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls2\ilvl0\cf2 \cb1 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl340\partightenfactor0
+\ls2\ilvl1
+\f0 \cf2 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls2\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+should return the next movie that comes\'a0
+\i after
+\i0 \'a0"Shredder".\cb1 \
+\ls2\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Find\'a0movies in the database. This command will print all movie titles that are in between two specified titles, arranged lexicographically. (Both endpoints included). It can also be used for search by a prefix. For example:
+\f1 find/shed/shre\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls2\ilvl0\cf2 \cb1 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl340\partightenfactor0
+\ls2\ilvl1
+\f0 \cf2 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls2\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+might print "sherlock" in a fictional database, but neither "shredder" nor "shrek" since that's outside the range of the parameters.\cb1 \
+\ls2\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Remove\'a0movie from database. The movie name should be specified exactly by the argument and then removed from the database. Continuing the example above:
+\f1 remove/shreDDer\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls2\ilvl0\cf2 \cb1 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl340\partightenfactor0
+\ls2\ilvl1
+\f0 \cf2 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls2\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+in the example above will remove the movie "Shredder" (note the case-insensitivity) from the database.\cb1 \
+\pard\pardeftab720\sl340\sa40\partightenfactor0
+\cf2 \cb3 \'a0\
+To take an example of a live session, here is how to interact with\'a0
+\f1 EMD
+\f0 \'a0from the command line. The red commands are what you type in, and the black is what the program will return. (Movie descriptions from\'a0{\field{\*\fldinst{HYPERLINK "http://www.reddit.com/r/AskReddit/comments/23oeql/what_is_the_darkest_way_you_can_describe_a/"}}{\fldrslt \ul Reddit}}).\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1 \cf2 $ java EMD\
+\
+add/Mary Poppins/Two children, neglected by parents who are consumed with their business and political goals, find themselves in peril as two strangers lead them on a chase across London rooftops.\
+Adding 'Mary Poppins' ...\
+\
+add/Toy Story/Brainwashed animated playthings are abandoned by their slave master and sent to a camp where they are abused and imprisoned by their peers.\
+Adding 'Toy Story' ...\
+\
+add/Aladdin/A delinquent and his pet steal treasure and use it to kidnap a princess. Stolkholm syndrome ensues in this whole new world.\
+Adding 'Aladdin' ...\
+\
+next/aardvark\
+Looking up next movie after 'aardvark' ...\
+aladdin\
+\
+next/beetlejuice\
+Looking up next movie after 'beetlejuice' ...\
+mary poppins\
+\
+find/aardvark/zyzzyva\
+Searching range of 'aardvark'-'zyzzyva' ...\
+aladdin: A delinquent and his pet steal treasure and use it to kidnap a princess. Stolkholm syndrome ensues in this whole new world.\
+mary poppins: Two children, neglected by parents who are consumed with their business and political goals, find themselves in peril as two strangers lead them on a chase across London rooftops.\
+toy story: Brainwashed animated playthings are abandoned by their slave master and sent to a camp where they are abused and imprisoned by their peers.\
+\
+get/toy story\
+Looking up 'toy story' ...\
+Brainwashed animated playthings are abandoned by their slave master and sent to a camp where they are abused and imprisoned by their peers.\
+\
+remove/toy story\
+Removing 'toy story' ...\
+\
+get/toy story\
+Looking up 'toy story' ...\
+null\
+\
+next/Snow White\
+Looking up next movie after 'Snow White' ...\
+null\
+\
+find/aardvark/zyzzyva\
+Searching range of 'aardvark'-'zyzzyva' ...\
+aladdin: A delinquent and his pet steal treasure and use it to kidnap a princess. Stolkholm syndrome ensues in this whole new world.\
+mary poppins: Two children, neglected by parents who are consumed with their business and political goals, find themselves in peril as two strangers lead them on a chase across London rooftops.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls3\ilvl0
+\f0 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl340\sa40\partightenfactor0
+\cf2 \'a0\
+\pard\pardeftab720\sl460\partightenfactor0
+
+\fs36 \cf2 Assignment\
+\pard\pardeftab720\sl340\sa40\partightenfactor0
+
+\fs28 \cf2 Fortunately for you, most of the command-line interface has been implemented. However, the implementation for the crucial data structure supporting the EMD -- a\'a0RangeMap\'a0-- seems to be missing. In particular, the following commands need to be implemented using some data structure that supports range queries, such as\'a0binary search trees\'a0(BST), or something fancier...\
+Note:\'a0Your implementation needs to be generic: instead of just movie names and descriptions being strings, we will use Java generics with\'a0
+\f1 K
+\f0 \'a0representing the key type, and\'a0
+\f1 V
+\f0 \'a0the value type. You need to follow the interface in\'a0
+\f1 RangeMap.java
+\f0 . We also insist that the keys\'a0
+\f1 K
+\f0 \'a0are\'a0
+\f1 Comparable
+\f0 , in other words that you can compare two keys and know which is bigger or smaller. For movie titles, this is the lexicographic (alphabetic) ordering of strings. EMD already converts all movie titles to lower-case, so you can just do generic key comparison.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls4\ilvl0
+\f1 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+add(K key, V value):\cb1 \uc0\u8232 
+\f0 \cb3 Add the key and a value to your RangeMap. (For EMD, this would be the name of the movie (key) and its description (value), respectively.) If there is a duplicate key, the old entry should be overwritten with the new value.\cb1 \
+\ls4\ilvl0
+\f1 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+V get(K key):\cb1 \uc0\u8232 
+\f0 \cb3 Retrieve the value corresponding to key, or return\'a0
+\f1 null
+\f0 \'a0if the key is not in your RangeMap. The comparison between keys should be exact. (For EMD, this would correspond to the name of the movie (key).)\cb1 \
+\ls4\ilvl0
+\f1 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+K next(K key):\cb1 \uc0\u8232 
+\f0 \cb3 Return the key in the RangeMap that's lexicographically next after 'key', or return null otherwise. (For EMD, this would correspond to the name of the movie that's next after the one specified). Note that\'a0
+\f1 key
+\f0 \'a0does not have to exist in the database.\cb1 \
+\ls4\ilvl0
+\f1 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+List<KVPair<K,V>> range(K start, K end):\cb1 \uc0\u8232 
+\f0 \cb3 Return a list of key-value pairs in the RangeMap that are between the strings\'a0
+\f1 start
+\f0 \'a0and\'a0
+\f1 end
+\f0 , both endpoints included. The list should be in lexicographic order. If no keys match, the method should return the empty list. (For EMD, range would return an alphabetic list of movies titles that are between the two parameter strings). Note that neither\'a0
+\f1 start
+\f0 \'a0nor\'a0
+\f1 end
+\f0 \'a0have to be real movie titles that exist in the database.\cb1 \
+\ls4\ilvl0
+\f1 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+remove(K key):\cb1 \uc0\u8232 
+\f0 \cb3 Removes the key-value pair with key specified by the parameter from the RangeMap. Does nothing if the key does not exist.\cb1 \
+\pard\pardeftab720\sl340\sa40\partightenfactor0
+\cf2 \cb3 \'a0\
+As before, you should read through the source to see how it works. The files you need are located\'a0{\field{\*\fldinst{HYPERLINK "http://mathcs.emory.edu/~cs171001/share/hw5/"}}{\fldrslt \ul here}}. Comments marked "TODO: Implement me(basic score)" are required elements, which you must complete before submission on Mimir. Other items marked "TODO" are "extra credit": they are not required for submission, but they give you a better score. If you want full 100% score (or more!) on the assignment, make sure to try the extra credit parts, but only do so after you've made sure the required parts are working. It is important to implement a\'a0
+\i time-efficient
+\i0 implementation of\'a0
+\f1 range
+\f0 , something that a regular BST implementation will achieve (a balanced BST will not be required).\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls5\ilvl0
+\f1 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+K next(K key):\cb1 \uc0\u8232 
+\f0 \cb3 Return the key in the RangeMap that's lexicographically next after 'key', or return null otherwise. (For EMD, this would correspond to the name of the movie that's next after the one specified). Note that\'a0
+\f1 key
+\f0 \'a0does not have to exist in the database.
+\fs36 Grading:\cb1 \uc0\u8232 
+\fs28 \cb3 As before, your work is governed by the\'a0{\field{\*\fldinst{HYPERLINK "http://catalog.college.emory.edu/academic/policy/honor_code.html"}}{\fldrslt \ul College Honor Code}}\'a0and the\'a0{\field{\*\fldinst{HYPERLINK "http://mathcs.emory.edu/spca.php"}}{\fldrslt \ul Math/CS SPCA}}. If you make multiple submissions on Mimir, only your last submission counts.\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl340\partightenfactor0
+\ls5\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+Code without the SPCA comment block gets 0 points.\cb1 \
+\ls5\ilvl1\cb3 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+Code that does not compile gets 0 points.\cb1 \
+\ls5\ilvl1\cb3 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+Code that breaks the RangeMap interface or uses Java library classes gets 0 points. (Mimir will try to check this for you, but ultimately you are responsible).\cb1 \
+\ls5\ilvl1\cb3 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+If you use or derive code from the textbook, you\'a0
+\i must
+\i0 \'a0document as a comment that you did for each method. You are not allowed to use other sources (as per SPCA).\cb1 \
+\ls5\ilvl1\cb3 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+The only collection classes from\'a0
+\f1 java.util
+\f0 \'a0that you can use are a List and ArrayList.\cb1 \
+\ls5\ilvl1\cb3 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+20 points. If your code meets the previous requirements, and\'a0
+\f1 add()
+\f0 \'a0and\'a0
+\f1 get()
+\f0 \'a0are consistent and look correct (in which case you've implemented a Bag), your code is worth 20 points. Other methods may be unimplemented for this score.\cb1 \
+\ls5\ilvl1\cb3 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
++30 points. If you have additionally implemented\'a0
+\f1 next()
+\f0 \'a0in a way that can\'a0
+\i efficiently
+\i0 \'a0and correctly find the next key, you get another 30 points. Efficient here means logarithmic in the number of keys in the RangeMap (
+\f1 O(log N)
+\f0 \'a0on average) if there are\'a0
+\f1 N
+\f0 \'a0keys in the database).\cb1 \
+\ls5\ilvl1\cb3 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
++30 points. If you have also completed the\'a0
+\f1 range()
+\f0 \'a0method in a way that is\'a0
+\i time-efficient
+\i0 \'a0and correct, you get another 30 points. Time-efficient here also means that looking up\'a0
+\f1 M
+\f0 \'a0keys from a RangeMap should be at most linear in\'a0
+\f1 M
+\f0 \'a0and logarithmic in the number of keys in the database (
+\f1 O(M + log N)
+\f0 ) in average case, assuming keys have been introduced in a random order. (In other words, you don't need to implement a balanced BST).\cb1 \
+\ls5\ilvl1\cb3 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
++10 points (bonus). If your\'a0
+\f1 remove
+\f0 \'a0method works correctly, then that is worth another 10 points. Consider this to be extra credit.\cb1 \
+\ls5\ilvl1\cb3 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
++20 points. Your code should be well formatted and reasonably commented. In particular you should explain your solution, including whatever algorithms, data structures and layout you are using, in your comments. This is worth 20 points (and checked by hand).\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Your total grade for the assignment is the number of points divided by 100. So it is possible to get more than 100% if you solve all the parts. We will apply the same late penalty as usual (10% per day up to 3 days).
+\fs36 Hints\cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl340\partightenfactor0
+\ls5\ilvl1
+\fs28 \cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+You can test your progress on your own computer by typing:
+\f1 $ java EMD test1-in.txt\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl340\partightenfactor0
+\ls5\ilvl1\cf2 \cb1 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f1 	}\expnd0\expndtw0\kerning0
+\uc0\u8232 
+\f0 \cb3 The output should match the contents of\'a0
+\f1 test1-out.txt
+\f0 . The first test checks only\'a0
+\f1 add
+\f0 \'a0and\'a0
+\f1 get
+\f0 , the second test also uses\'a0
+\f1 find
+\f0 \'a0and\'a0
+\f1 next
+\f0 , and the third one additionally checks\'a0
+\f1 remove
+\f0 .\cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl340\partightenfactor0
+\ls5\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+First make things work, then optimize.\cb1 \
+}
